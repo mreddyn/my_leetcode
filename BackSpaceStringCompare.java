@@ -1,4 +1,4 @@
-package JavaPrograms;
+
 
 public class BackSpaceStringCompare {
     private static String fun(String s){

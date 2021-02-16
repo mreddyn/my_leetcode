@@ -17,7 +17,7 @@ public class CombinationSum {
              for(int i=start;i<nums.length;i++){
                  templist.add(nums[i]);
                  back(list, templist, nums, remain-nums[i], i);
-                 templist.remove(templist.size()-1);
+                 //templist.remove(templist.size()-1);
              }
          }
     }
