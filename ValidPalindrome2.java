@@ -4,8 +4,10 @@ public class ValidPalindrome2 {
         n = s.length();
         StringBuilder sb = new StringBuilder(s);
         for(int i=0;i<n;i++){
+            char temp = sb.charAt(i);
             sb.deleteCharAt(i);
-            check(sb.toString());
+            if(check(sb.toString())) return true;
+            else { sb.insert(i, temp);}
         }
         return false;
 
@@ -25,7 +27,8 @@ public class ValidPalindrome2 {
         return true;
     }
     public static void main(String[] args) {
-        
+        String s = "abaad";
+        System.out.println(fun(s));
     }
     
 }
